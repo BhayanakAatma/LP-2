@@ -1,0 +1,12 @@
+sudo apt update
+sudo apt install python3 python3-pip
+
+curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
+gcloud init
+
+gcloud components install app-engine-python
+
+gcloud cloud-shell ssh
+
+gcloud auth revoke --all
